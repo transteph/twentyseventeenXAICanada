@@ -35,8 +35,17 @@
 
  				<?php twentyseventeen_edit_link( get_the_ID() ); ?>
  
- 			</header><!-- .entry-header -->
-			<div class="entry-content">
+			 </header><!-- .entry-header -->
+			 
+			 
+			 <?php 
+				if( get_field('bg') ) {
+					$bg = get_field('bg');
+					echo '<div class="entry-content" style="background-image: url(' . $bg['url'] . ');">';
+				} else {
+					echo '<div class="entry-content">' ;
+				}
+			?>
 				<?php
 					/* translators: %s: Name of current post */
 					the_content( sprintf(

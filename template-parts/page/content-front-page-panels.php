@@ -27,7 +27,15 @@ global $twentyseventeencounter;
 
 	<?php endif; ?>
 
-	<div class="panel-content">
+	<!-- set a background image for the front-page section if one was uploaded -->
+	<?php 
+		if( get_field('bg') ) {
+			$bg = get_field('bg');
+				echo '<div class="panel-content" id="with-bg" style="background-image: url(' . $bg . ');">';
+		} else {
+			echo '<div class="panel-content">' ;
+			}
+	?>
 		<div class="wrap">
 			<header class="entry-header">
  				<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
