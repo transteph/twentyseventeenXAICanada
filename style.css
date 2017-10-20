@@ -1646,8 +1646,8 @@ body.has-header-video .site-title a {
     font-family: "Raleway", "Helvetica Neue", helvetica, arial, sans-serif;
     font-weight: 600;
     background-color: white;
-    padding: 5px;
-    padding-top: 0;
+    padding: 0px 10px 5px 10px;
+    display: inline-block;
 }
 
 
