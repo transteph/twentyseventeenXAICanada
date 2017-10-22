@@ -3559,6 +3559,10 @@ object {
         border: 0;
         display: inline-block;
     }
+    /* move first top menu link so it doesn't block logo */
+    .main-navigation li:first-child{
+        padding-left:150px;
+    }
     .main-navigation li li {
         display: block;
     }
