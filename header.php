@@ -32,6 +32,10 @@
 
 		<?php if ( has_nav_menu( 'top' ) ) : ?>
 			<div class="navigation-top">
+				<!-- Amnesty International Canada logo -->
+				<a href="http://writeathon.ca/youth/" alt="Home">
+					<img id="menu-logo" src="http://writeathon.ca/youth/wp-content/uploads/2017/10/amnesty-canada-logo.png" />
+				</a>
 				<div class="wrap">
 					<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
 				</div><!-- .wrap -->

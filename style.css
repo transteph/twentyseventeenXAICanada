@@ -3497,6 +3497,12 @@ object {
 	}
     */
     /* Navigation */
+    #menu-logo{
+      height: 65px;
+      width: auto;
+      left: 50px;
+      position:absolute;
+    }
     .navigation-top {
         bottom: 0;
         font-size: 14px;

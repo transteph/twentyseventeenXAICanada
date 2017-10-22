@@ -28,7 +28,7 @@ global $twentyseventeencounter;
 	<?php endif; ?>
 
 	<!-- set a background image for the front-page section if one was uploaded -->
-	<?php 
+	<?php
 		if( get_field('bg') ) {
 			$bg = get_field('bg');
 				echo '<div class="panel-content" id="with-bg" style="background-image: url(' . $bg . ');">';
@@ -39,7 +39,7 @@ global $twentyseventeencounter;
 		<div class="wrap">
 			<header class="entry-header">
  				<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
- 
+
 				<?php twentyseventeen_edit_link( get_the_ID() ); ?>
 
 			</header><!-- .entry-header -->
