@@ -32,6 +32,8 @@ global $twentyseventeencounter;
 		if( get_field('bg') ) {
 			$bg = get_field('bg');
 				echo '<div class="panel-content" id="with-bg" style="background-image: url(' . $bg . ');">';
+		} else if( get_field('bg_color') ) {
+				echo '<div class="panel-content" id="with-bg" style="background:' . get_field('bg_color') . ';">';
 		} else {
 			echo '<div class="panel-content">' ;
 			}

@@ -1,0 +1,102 @@
+/* These styles are used only in the backend editor */
+
+/* Here you can override any CSS which causes layout or visibility problems in the editor, */
+/* and duplicate any Theme-CSS to make the editor display look more like the real frontend */
+.heading-1{
+    font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
+    font-size: 45px;
+    font-size: 4.7rem;
+    font-weight: 300;
+    line-height: 1.0;
+  }
+  
+  .heading-2{
+    font-size: 37px;
+    font-size: 3.7rem;
+    font-weight: 300;
+    font-family: "Raleway", "Helvetica Neue", helvetica, arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.0;
+  }
+  
+  .heading-3{
+    font-size: 32px;
+    font-size: 2.2rem;
+    font-weight: 300;
+    font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
+    font-weight: 500;
+    line-height: 1.0;
+  }
+  
+  .heading-4{
+    font-size: 27px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: "Raleway", "Helvetica Neue", helvetica, arial, sans-serif;
+    line-height: 1.0;
+  }
+  @media screen and (min-width: 700px) {
+      .heading-1{
+        font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
+        font-size: 45px;
+        font-size: 4.2rem;
+        font-weight: 300;
+        line-height: 1.0;
+      }
+  
+      .heading-2{
+        font-size: 37px;
+        font-size: 3.7rem;
+        font-weight: 300;
+        font-family: "Raleway", "Helvetica Neue", helvetica, arial, sans-serif;
+        font-weight: 300;
+        line-height: 1.0;
+      }
+  
+      .heading-3{
+        font-size: 32px;
+        font-size: 1.7rem;
+        font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
+        font-weight: 600;
+        line-height: 1.0;
+      }
+  
+      .heading-4{
+        font-family: "Raleway", "Helvetica Neue", helvetica, arial, sans-serif;
+        font-size: 27px;
+        font-size: 1.0rem;
+        font-weight: 400;
+        line-height: 1.0;
+      }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .heading-1{
+      font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
+      font-size: 45px;
+      font-size: 3.0rem;
+      font-weight: 300;
+    }
+  
+    .heading-2{
+      font-size: 37px;
+      font-size: 2.0rem;
+      font-weight: 300;
+      font-family: "Raleway", "Helvetica Neue", helvetica, arial, sans-serif;
+      font-weight: 500;
+    }
+  
+    .heading-3{
+      font-size: 32px;
+      font-size: 1.0rem;
+      font-family: "Raleway", "Helvetica Neue", helvetica, arial, sans-serif;
+      font-weight: 600;
+    }
+  
+    .heading-4{
+      font-size: 27px;
+      font-size: 2.5rem;
+      font-family: "Raleway", "Helvetica Neue", helvetica, arial, sans-serif;
+      font-weight: 400;
+    }
+  }

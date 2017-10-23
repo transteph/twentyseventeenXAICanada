@@ -1368,7 +1368,16 @@ a:hover .nav-title,
     clear: both;
     display: block;
 }
-
+@media screen and (max-width: 48em){
+    #menu-logo{
+        display: block;
+        position: absolute;
+        left: 2%;
+        max-height: 45px;
+        height: 100%;
+        width: auto;
+    }
+}
 .main-navigation ul {
     background: #fff;
     list-style: none;
@@ -1686,6 +1695,8 @@ body.home.title-tagline-hidden.has-header-video .custom-logo-link img {
 body:not(.title-tagline-hidden) .site-branding-text {
     display: inline-block;
     vertical-align: middle;
+    max-width: 70%;
+    margin-left: 5%;
 }
 
 .custom-header {
@@ -3502,6 +3513,8 @@ object {
       width: auto;
       left: 50px;
       position:absolute;
+      display: block;
+      z-index: 4444;
     }
     .navigation-top {
         bottom: 0;

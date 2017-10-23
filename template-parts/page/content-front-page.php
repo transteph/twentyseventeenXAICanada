@@ -41,7 +41,7 @@
 			 <?php
 				if( get_field('bg') ) {
 					$bg = get_field('bg');
-					echo '<div class="entry-content" style="background-image: url(' . $bg['url'] . ');">';
+					echo '<div class="entry-content" style="background-image: url(' . $bg . '); background-size:contain;background-repeat:no-repeat;background-position:center;">';
 				} else {
 					echo '<div class="entry-content">' ;
 				}

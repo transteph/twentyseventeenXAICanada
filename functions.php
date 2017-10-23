@@ -566,7 +566,14 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
  */
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
 
-/**
+// Connect the WordPress post editor to your custom stylesheet
+function my_theme_add_editor_styles() {
+	add_editor_style( 'editor-style-shared.css' );
+  }
+  
+  add_action( 'admin_init', 'my_theme_add_editor_styles' );
+
+  /**
  * Add editor stylesheet
  *
  */
