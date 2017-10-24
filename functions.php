@@ -578,3 +578,13 @@ function my_theme_add_editor_styles() {
  *
  */
  add_editor_style();
+
+ /*
+ * A simple function to control the number of Twenty Seventeen Theme Front Page Sections
+ * Source: wpcolt.com
+ */
+function wpc_custom_front_sections( $num_sections )
+{
+	return 6; //Change this number to change the number of the sections.
+}
+add_filter( 'twentyseventeen_front_page_sections', 'wpc_custom_front_sections' );
