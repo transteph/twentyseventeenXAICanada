@@ -36,6 +36,7 @@
 				<a href="http://writeathon.ca/youth/" alt="Home">
 					<img id="menu-logo" src="http://writeathon.ca/youth/wp-content/uploads/2017/10/amnesty-canada-logo.png" />
 				</a>
+				<h5 id="nav-slogan">YOUTH IN ACTION</h5>
 				<div class="wrap">
 					<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
 				</div><!-- .wrap -->

@@ -1989,12 +1989,15 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 .page .panel-content .entry-title,
 .page-title,
 body.page:not(.twentyseventeen-front-page) .entry-title {
+    /*
     color: #222;
     font-size: 32px;
     font-size: 2.78rem;
     font-weight: 800;
     letter-spacing: 0.14em;
     text-transform: uppercase;
+    */
+    display:none;
 }
 
 .entry-header .entry-title {
@@ -3532,6 +3535,16 @@ object {
 	}
     */
     /* Navigation */
+    #nav-slogan{
+        background-color: yellow;
+        float: right;
+        display: inline-block;
+        padding: 2px 15px 2px 85px;
+        font-size: 120%;
+        margin-top: 10px;
+        letter-spacing: 2px;
+        font-weight: 500;
+    }
     #menu-logo{
       height: 57px;
       width: auto;
@@ -3722,7 +3735,6 @@ object {
     }
     /* Scroll down arrow */
     .site-header .menu-scroll-down {
-        display: block;
         padding: 1em;
         position: absolute;
         right: 0;
