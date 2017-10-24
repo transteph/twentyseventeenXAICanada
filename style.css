@@ -1,10 +1,10 @@
 /*
 Theme Name: Twenty Seventeen x AI Canada
 Theme URI: https://wordpress.org/themes/twentyseventeen/
-Author: the WordPress team
-Author URI: https://wordpress.org/
+Author: the WordPress team + Stephanie Tran
+Author URI: https://wordpress.org/    |   https://stephanietran.ca
 Description: Twenty Seventeen brings your site to life with header video and immersive featured images. With a focus on business sites, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more. Personalize its asymmetrical grid with a custom color scheme and showcase your multimedia content with post formats. Our default theme for 2017 works great in many languages, for any abilities, and on any device.
-Version: 2.0
+Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: twentyseventeen
@@ -45,6 +45,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 18.0 SVGs Fallbacks
 19.0 Media Queries
 20.0 Print
+21.0 Custom Classes
 --------------------------------------------------------------*/
 
 
@@ -436,7 +437,8 @@ h4,
 h5,
 h6 {
     clear: both;
-    line-height: 1.2;
+    line-height: 1.4;
+    margin:0px;
 }
 
 h1:first-child,
@@ -451,6 +453,7 @@ h6:first-child {
 h1 {
     font-size: 30px;
     font-size: 1.7rem;
+    font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
     font-weight: 300;
 }
 
@@ -468,8 +471,7 @@ h3 {
     color: #000;
     font-size: 25px;
     font-size: 1.6rem;
-    font-weight: 300;
-    font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
+    font-family: "Raleway", "Helvetica Neue", helvetica, arial, sans-serif;
     font-weight: 600;
 }
 
@@ -477,23 +479,26 @@ h4 {
     color: #000;
     font-size: 16px;
     font-size: 1rem;
-    font-weight: 800;
+    font-family: "Raleway", "Helvetica Neue", helvetica, arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 h5 {
     color: #000;
     font-size: 13px;
     font-size: 0.8125rem;
-    font-weight: 800;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
+    letter-spacing: 0em;
+    font-family: "Raleway", "Helvetica Neue", helvetica, arial, sans-serif;
+    font-weight: 400;
 }
 
 h6 {
     color: #000;
     font-size: 15px;
     font-size: 0.9375rem;
-    font-weight: 800;
+    font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
+    font-weight: 400;
 }
 
 p {
@@ -1028,8 +1033,8 @@ input[type="submit"] {
     line-height: 1;
     padding: 1em 2em;
     text-shadow: none;
-    -webkit-transition: background 0.2s;
-    transition: background 0.2s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 input+button,
@@ -1158,10 +1163,6 @@ thead th {
 th {
     padding: 0.4em;
     text-align: left;
-}
-
-tr {
-    border-bottom: 1px solid #eee;
 }
 
 td {
@@ -1883,7 +1884,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 }
 
 .twentyseventeen-front-page .wrap {
-    max-width: 70%;
+    max-width: 90%;
 }
 
 .panel-content {
@@ -1984,8 +1985,8 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 .page-title,
 body.page:not(.twentyseventeen-front-page) .entry-title {
     color: #222;
-    font-size: 14px;
-    font-size: 0.875rem;
+    font-size: 32px;
+    font-size: 2.78rem;
     font-weight: 800;
     letter-spacing: 0.14em;
     text-transform: uppercase;
@@ -2173,7 +2174,6 @@ body:not(.twentyseventeen-front-page) .entry-header {
 .archive.page-one-column:not(.has-sidebar) #primary {
     margin-left: auto;
     margin-right: auto;
-    max-width: 740px;
 }
 
 .single-featured-image-header {
@@ -2390,9 +2390,14 @@ body:not(.twentyseventeen-front-page) .entry-header {
 --------------------------------------------------------------*/
 
 .site-footer {
-    border-top: 1px solid #eee;
+    background-color: #252525;
+    box-shadow: 0px -2px 2px black;
 }
-
+.site-footer a{
+    color:white;
+    font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
+    font-weight: 300;
+}
 .site-footer .wrap {
     padding-bottom: 1.5em;
     padding-top: 2em;
@@ -2457,8 +2462,14 @@ body:not(.twentyseventeen-front-page) .entry-header {
     margin-bottom: 1em;
 }
 
-.site-info a {
-    color: #666;
+.site-info a,
+.site-info a:hover {
+    color: white !important;
+    font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif !important;
+    font-weight: 400 !important;
+    text-decoration: none !important;
+    webkit-box-shadow: none !important ; 
+     box-shadow: none !important;
 }
 
 .site-info .sep {
@@ -3324,27 +3335,32 @@ object {
         font-size: 1.125rem;
     }
     h1 {
-        font-size: 36px;
-        font-size: 2.85rem;
+        font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
+        font-weight: 300;
+        font-size: 56px;
+        font-size: 3.5rem;
     }
     h2,
-    h3,
     .home.blog .entry-title,
     .page .panel-content .recent-posts .entry-title {
-        font-size: 32px;
-        font-size: 2.7rem;
+        font-size: 52px;
+        font-size: 3.2rem;
+    }
+    h3{
+        font-size: 49px;
+        font-size: 2.8rem;
     }
     h4 {
-        font-size: 27px;
-        font-size: 2.2rem;
+        font-size: 47px;
+        font-size: 2.5rem;
     }
     h5 {
-        font-size: 22px;
-        font-size: 1.8rem;
+        font-size: 42px;
+        font-size: 1.5rem;
     }
     h6 {
-        font-size: 15px;
-        font-size: 1.1rem;
+        font-size: 25px;
+        font-size: 1.2rem;
     }
     .entry-content blockquote.alignleft,
     .entry-content blockquote.alignright {
@@ -3404,6 +3420,9 @@ object {
     }
     .gallery-columns-4 .gallery-item {
         max-width: 25%;
+    }
+    #take-pledge{
+        max-width:50%;
     }
 }
 
@@ -3509,7 +3528,7 @@ object {
     */
     /* Navigation */
     #menu-logo{
-      height: 65px;
+      height: 57px;
       width: auto;
       left: 50px;
       position:absolute;
@@ -3519,7 +3538,7 @@ object {
     .navigation-top {
         bottom: 0;
         font-size: 14px;
-        font-size: 0.875rem;
+        font-size: 0.85rem;
         left: 0;
         position: absolute;
         right: 0;
@@ -3527,7 +3546,7 @@ object {
         z-index: 3;
     }
     .navigation-top .wrap {
-        max-width: 80%;
+        max-width: 90%;
         /* The font size is 14px here and we need 50px padding in ems */
         padding: 0.75em 3.4166666666667em;
     }
@@ -3570,17 +3589,13 @@ object {
     }
     .main-navigation li {
         border: 0;
-        display: inline-block;
-    }
-    /* move first top menu link so it doesn't block logo */
-    .main-navigation li:first-child{
-        padding-left:150px;
+        float:right;
     }
     .main-navigation li li {
         display: block;
     }
     .main-navigation a {
-        padding: 1em 1.25em;
+        padding: 0.7em;
     }
     .main-navigation ul ul {
         background: #fff;
@@ -3758,6 +3773,7 @@ object {
     .panel-content .wrap {
         padding-bottom: 4.5em;
         padding-top: 6em;
+        max-width: 60%;
     }
     .panel-image {
         height: 100vh;
@@ -3901,11 +3917,6 @@ object {
         left: -1.5em;
     }
     /* Pages */
-    .page.page-one-column .entry-header,
-    .twentyseventeen-front-page.page-one-column .entry-header,
-    .archive.page-one-column:not(.has-sidebar) .page-header {
-        margin-bottom: 4em;
-    }
     .page:not(.home) #content {
         padding-bottom: 3.25em;
     }
@@ -3955,7 +3966,6 @@ object {
         font-size: 14px;
         font-size: 0.875rem;
         line-height: 1.6;
-        margin-top: 3em;
     }
     .site-footer .widget-column.footer-widget-1 {
         float: left;
@@ -4202,5 +4212,28 @@ object {
     }
     .site-footer {
         padding: 0;
+    }
+}
+/*--------------------------------------------------------------
+21.0 Custom Classes
+--------------------------------------------------------------*/
+.float-left{
+    float:left;
+    padding-right:5px;
+}
+
+.float-right{
+    float:right;
+    padding-right:5px;
+    transform: translateY(-15px);
+}
+.elementor-button{
+    -webkit-transition: all .5s !important;
+    -o-transition: all .5s !important;
+    transition: all .5s !important;
+}
+@media screen and ( min-width: 65em) {
+    .main-navigation li{
+        padding-left: 20px;
     }
 }

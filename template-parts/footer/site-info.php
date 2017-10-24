@@ -10,4 +10,5 @@
 
 ?>
 <div class="site-info">
+    <a href="https://amnesty.ca">&copy; <?php echo date('Y'); ?> Amnesty International Canada</a>
 </div><!-- .site-info -->

@@ -1,0 +1,164 @@
+<p>
+        <script type="text/javascript">
+            <!--//--><![CDATA[// ><!--
+    
+                /***********************************************
+                * Textarea Maxlength script- © Dynamic Drive (www.dynamicdrive.com)
+                * This notice must stay intact for legal use.
+                * Visit http://www.dynamicdrive.com/ for full source code
+                ***********************************************/
+                function ismaxlength(obj, mlength) {
+                    if (obj.value.length > mlength)
+                        obj.value = obj.value.substring(0, mlength)
+                }
+    
+    //--><!]]>
+    
+        </script>
+    </p>
+    <form action="https://amnestycanada.informz.ca/clk/remote_post.asp" method="post" name="profileform" id="profileform"><input name="OptoutInfo" type="hidden" value="" />
+        <table style="background-color:rgba(0, 0, 0, 0);" border="0" cellpadding="0" cellspacing="0" width="400">
+            <script language="JavaScript">
+                    < !--//--><![CDATA[// ><!--
+    
+                    function moveCaret(event, objThisField, objNextField, objPrevField, nSize) {
+                        var keynum;
+                        if (window.event) // IE	
+                            keynum = event.keyCode;
+                        else if (event.which) // Netscape/Firefox/Opera	
+                            keynum = event.which;
+                        if (keynum == 37 || keynum == 39 || keynum == 38 || keynum == 40 || keynum == 8) //left, right, up, down arrows, backspace
+                        {
+                            var nCaretPosition = getCaretPosition(objThisField);
+                            if (keynum == 39 && nCaretPosition == nSize)
+                                moveToNextField(objNextField);
+                            if ((keynum == 37 || keynum == 8) && nCaretPosition == 0)
+                                moveToPrevField(objPrevField);
+                            return;
+                        }
+                        if (keynum == 9) //Tab
+                            return;
+                        if (objThisField.value.length >= nSize && objNextField != null)
+                            moveToNextField(objNextField);
+                    }
+                function moveToNextField(objNextField) {
+                    if (objNextField == null)
+                        return;
+                    objNextField.focus();
+                    if (document.selection) //IE
+                    {
+                        oSel = document.selection.createRange();
+                        oSel.moveStart('character', 0);
+                        oSel.moveEnd('character', objNextField.value.length);
+                        oSel.select();
+                    }
+                    else {
+                        objNextField.selectionStart = 0;
+                        objNextField.selectionEnd = objNextField.value.length;
+                    }
+                }
+                function moveToPrevField(objPrevField) {
+                    if (objPrevField == null)
+                        return;
+                    objPrevField.focus();
+                    if (document.selection) //IE
+                    {
+                        oSel = document.selection.createRange();
+                        oSel.moveStart('character', 0);
+                        oSel.moveEnd('character', objPrevField.value.length);
+                        oSel.select();
+                    }
+                    else {
+                        objPrevField.selectionStart = 0;
+                        objPrevField.selectionEnd = objNextField.value.length;
+                    }
+                }
+                function getCaretPosition(objField) {
+                    var nCaretPosition = 0;
+                    if (document.selection) //IE
+                    {
+                        var oSel = document.selection.createRange();
+                        oSel.moveStart('character', -objField.value.length);
+                        nCaretPosition = oSel.text.length;
+                    }
+                    if (objField.selectionStart || objField.selectionStart == '0')
+                        nCaretPosition = objField.selectionStart;
+                    return nCaretPosition;
+                }
+    
+    //--><!]]>
+    
+            </script>
+            <tbody style="padding:0px;margin:0px;">
+                                <tr>
+                                    <td align="left" valign="top" width="100%">
+                                        <font color="#000000"  size="3">
+                                            <input alt="Email Address" maxlength="100" name="email" size="25" type="text" value="" placeholder="Email (Required)" required
+                                            /></font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="top" width="100%">
+                                        <input alt="First Name" maxlength="500" name="personal_165" size="30" type="text" value=""  placeholder="First Name"
+                                        /></td>
+                                </tr>
+                                <tr> <td align="left" valign="top" width="100%">
+                                    <input alt="Last name" maxlength="500" name="personal_166" size="30" type="text" value="" placeholder="Last Name"
+                                        /></td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="top" width="100%">
+                                        <input alt="Postal Code" maxlength="500" name="personal_420" size="30" type="text" value="" placeholder="Postal Code"
+                                        /><input alt="action source" maxlength="500" name="personal_421" size="30" type="hidden"
+                                            value="Youth_pledge_2014" /><input name="formats" type="hidden" value="3" /></td>
+                                </tr>
+              </tbody>
+                <script type="text/javascript">
+                    <!--//--><![CDATA[// ><!--
+    
+                        function ShowDescriptions(SubDomain, val, brid) {
+                            myWindow = window.open(SubDomain + '/description.asp?brid=' + brid + '&id=' + val, 'Description', 'location=no,height=180,width=440,resizeable=no,scrollbars=yes,dependent=yes');
+                            myWindow.focus()
+                        }
+    
+    //--><!]]>
+    
+                </script>
+                <tr style="padding:0px;margin:0px;">
+                    <td colspan="2" style="padding:0px;margin:0px;"><br />
+                        <input class="elementor-animation-grow" border="0" name="update" style="background-color: #FFF200; color: #000000; font-size: 16pt; border-color: #333333;"
+                            type="submit" value="Submit &gt;&gt;" /></td>
+                </tr>
+            </tbody>
+        </table><input name="fid" type="hidden" value="435" /><input name="b" type="hidden" value="5027" /><input name="returnUrl" type="hidden"
+            value="http://www.amnesty.ca/get-involved/youth-activism?zmsg=1" /></form>
+    <script language="javascript">
+            < !--//--><![CDATA[// ><!--
+    
+            fullURL = document.URL
+        sAlertStr = ''
+        nLoc = fullURL.indexOf('&')
+        if (nLoc == -1)
+            nLoc = fullURL.length
+        if (fullURL.indexOf('zreq=') > 0) {
+            sRequired = fullURL.substring(fullURL.indexOf('zreq=') + 5, nLoc)
+            if (sRequired.length > 0) {
+                sRequired = ',' + sRequired.replace('%20', ' ')
+                sRequired = sRequired.replace(/,/g, '\n  - ')
+                sAlertStr = 'The following item(s) are required: ' + sRequired + '\n'
+            }
+        }
+        if (fullURL.indexOf('zmsg=') > 0) {
+            sMessage = fullURL.substring(fullURL.indexOf('zmsg=') + 5, fullURL.length)
+            if (sMessage.length > 0) {
+                sMessage = sMessage.replace(/%20/g, ' ')
+                sMessage = sMessage.replace(/%0A/g, '\n')
+                sAlertStr = sAlertStr + sMessage
+            }
+        }
+    
+    
+    
+    //--><!]]>
+    
+    </script>
