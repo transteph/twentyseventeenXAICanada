@@ -490,7 +490,7 @@ h5 {
     font-size: 0.8125rem;
     letter-spacing: 0em;
     font-family: "Raleway", "Helvetica Neue", helvetica, arial, sans-serif;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 h6 {
@@ -504,8 +504,9 @@ h6 {
 p {
     margin: 0 0 1.5em;
     padding: 0;
-    font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
-    font-weight: 400;
+    font-family: "Raleway", "Helvetica Neue", helvetica, arial, sans-serif;
+    font-weight: 500;
+    color:#000;
 }
 
 dfn,
@@ -1345,7 +1346,11 @@ a:hover .nav-title,
     border-top: 1px solid #eee;
     font-size: 16px;
     font-size: 1rem;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
 }
 
 .navigation-top .wrap {
@@ -3544,6 +3549,7 @@ object {
         right: 0;
         width: 100%;
         z-index: 3;
+        top:unset;
     }
     .navigation-top .wrap {
         max-width: 90%;
@@ -4051,6 +4057,9 @@ object {
     .comment-body {
         margin-left: 0;
     }
+    p{
+        font-size:16px;
+    }
 }
 
 @media screen and ( min-width: 79em) {
@@ -4231,6 +4240,9 @@ object {
     -webkit-transition: all .5s !important;
     -o-transition: all .5s !important;
     transition: all .5s !important;
+}
+.elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-description{
+    color:#000!important;
 }
 @media screen and ( min-width: 65em) {
     .main-navigation li{
