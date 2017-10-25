@@ -367,7 +367,7 @@ template {
 
 .clear:before,
 .clear:after,
-.entry-content:before,
+/* .entry-content:before, */
 .entry-content:after,
 .entry-footer:before,
 .entry-footer:after,
@@ -375,7 +375,7 @@ template {
 .comment-content:after,
 .site-header:before,
 .site-header:after,
-.site-content:before,
+/* .site-content:before, */
 .site-content:after,
 .site-footer:before,
 .site-footer:after,
@@ -451,6 +451,7 @@ h6:first-child {
 }
 
 h1 {
+    color: #000;
     font-size: 30px;
     font-size: 1.7rem;
     font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
@@ -1119,7 +1120,7 @@ hr {
 
 ul,
 ol {
-    margin: 0 0 1.5em;
+  /*  margin: 0 0 1.5em; */
     padding: 0;
 }
 
@@ -1297,8 +1298,7 @@ a:hover .nav-title,
 .widget ul li a:focus,
 .widget ul li a:hover {
     color: #000;
-    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
-    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+    font-weight:600;
 }
 
 
@@ -2142,6 +2142,7 @@ body:not(.twentyseventeen-front-page) #comments {
 
 body:not(.twentyseventeen-front-page) .entry-header {
     padding-top: 0;
+    display:none;
 }
 
 .blog .entry-meta a.post-edit-link,
@@ -2378,6 +2379,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 
 .page:not(.home) #content {
     padding-bottom: 1.5em;
+    padding-top: 0px!important;
 }
 
 
@@ -3370,6 +3372,30 @@ object {
         font-size: 25px;
         font-size: 1.2rem;
     }
+    body:not(.twentyseventeen-front-page):not(.home) h1{
+        font-size: 32px;
+        font-size: 2.7rem;
+    }
+    body:not(.twentyseventeen-front-page):not(.home) h2{
+        font-size: 27px;
+        font-size: 2.3rem;
+    }
+    body:not(.twentyseventeen-front-page):not(.home) h3{
+        font-size: 25px;
+        font-size: 2.0rem;
+    }
+    body:not(.twentyseventeen-front-page):not(.home) h4{
+        font-size: 22px;
+        font-size: 1.6rem;
+    }
+    body:not(.twentyseventeen-front-page):not(.home) h5{
+        font-size: 22px;
+        font-size: 1.3rem;
+    }
+    body:not(.twentyseventeen-front-page):not(.home) h6{
+        font-size: 1.1rem;
+    }
+
     .entry-content blockquote.alignleft,
     .entry-content blockquote.alignright {
         font-size: 14px;
@@ -4256,8 +4282,57 @@ object {
 .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-description{
     color:#000!important;
 }
+
 @media screen and ( min-width: 65em) {
     .main-navigation li{
         padding-left: 20px;
     }
+}
+
+/* Registration form  */
+form>ol,
+li.ss-choice-item{
+    list-style: none!important;
+}
+.ss-form-entry .error-message,
+.required-message{
+    font-size:70%;
+    color:grey;
+}
+#register label{
+    font-weight:400;
+    padding: 0px;
+    margin: 0px;
+}
+#register{
+    font-size: 90% !important;
+}
+
+#register input{
+    padding-bottom:5px;
+}
+
+.ss-form-entry{
+    margin-top:10px;
+}
+
+.ss-section-title,
+.ss-page-title{
+    font-size: 2rem;
+    font-family: "Montserrat";
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom:10px;
+}
+.ss-q-title{
+    font-weight:500;
+    margin-top:20px;
+}
+.ss-choices{
+    margin-left:20px;
+}
+#ss-submit{
+    padding: 1em 2em !important;
 }
