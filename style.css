@@ -1988,7 +1988,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 
 .page .panel-content .entry-title,
 .page-title,
-body.page:not(.twentyseventeen-front-page) .entry-title {
+body.page:not(.twentyseventeen-front-page) not(.blog)  .entry-title {
     /*
     color: #222;
     font-size: 32px;
@@ -2142,7 +2142,6 @@ body:not(.twentyseventeen-front-page) #comments {
 
 body:not(.twentyseventeen-front-page) .entry-header {
     padding-top: 0;
-    display:none;
 }
 
 .blog .entry-meta a.post-edit-link,
@@ -2177,6 +2176,23 @@ body:not(.twentyseventeen-front-page) .entry-header {
 
 /* Single Post */
 
+body .blog .entry-title {
+    display:block !important;
+    font-size: 32px;
+    font-size: 2.7rem;
+    position: absolute;
+    top: -50px;
+    background-color: black;
+    padding: 10px;
+    display: inline-block;
+    color: white;
+    max-width:70%;
+}
+
+body:not(.twentyseventeen-front-page):not(.home) .entry-title {
+    display:none;
+}
+
 .single-post:not(.has-sidebar) #primary,
 .page.page-one-column:not(.twentyseventeen-front-page) #primary,
 .archive.page-one-column:not(.has-sidebar) .page-header,
@@ -2189,7 +2205,9 @@ body:not(.twentyseventeen-front-page) .entry-header {
     background-color: #fafafa;
     border-bottom: 1px solid #eee;
 }
-
+body:not(.twentyseventeen-front-page) .single-featured-image-header {
+    max-height:500px;
+}
 .single-featured-image-header img {
     display: block;
     margin: auto;
@@ -2617,6 +2635,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 
 #secondary {
     padding: 1em 0 2em;
+    display:none;
 }
 
 .widget {
@@ -3484,12 +3503,13 @@ object {
     }
     .has-sidebar:not(.error404) #primary {
         float: left;
-        width: 58%;
+        width: 68%;
     }
     .has-sidebar #secondary {
+        display:block;
         float: right;
         padding-top: 0;
-        width: 36%;
+        width: 26%;
     }
     .error404 #primary {
         float: none;
@@ -3904,8 +3924,8 @@ object {
     .error404:not(.has-sidebar) #primary .page-content,
     .error404.has-sidebar #primary .page-content,
     body.page-two-column #comments {
-        float: right;
-        width: 58%;
+        float: left;
+        width: 100%;
     }
     .blog .site-main>article,
     .archive .site-main>article,
