@@ -3375,6 +3375,7 @@ object {
         font-size: 52px;
         font-size: 3.2rem;
     }
+   
     h3{
         font-size: 49px;
         font-size: 2.8rem;
@@ -4205,6 +4206,7 @@ object {
     body.page:not(.twentyseventeen-front-page) .entry-title {
         font-size: 10pt;
     }
+    
     /* Layout */
     .wrap {
         padding-left: 5% !important;
@@ -4284,6 +4286,26 @@ object {
 /*--------------------------------------------------------------
 21.0 Custom Classes
 --------------------------------------------------------------*/
+@media screen and (min-width: 48em){
+.blog h1.page-title{
+    position: absolute!important;
+    top:0px;
+    left:0px;
+    }
+}
+    .blog h1.page-title{
+        position:relative;
+        color: white;
+        background-color: #1a1a1a;
+        padding: 10px;
+        font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
+        font-weight: 300;
+        text-align: center;
+        width: 100%;
+        top: 0px;
+        left: 0;
+    }
+
 .float-left{
     float:left;
     padding-right:5px;
