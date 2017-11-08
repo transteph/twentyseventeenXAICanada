@@ -2396,7 +2396,7 @@ body:not(.twentyseventeen-front-page) .single-featured-image-header {
 }
 
 .page:not(.home) #content {
-    padding-bottom: 1.5em;
+  /*  padding-bottom: 1.5em; */
     padding-top: 0px!important;
 }
 
@@ -3983,7 +3983,7 @@ object {
     }
     /* Pages */
     .page:not(.home) #content {
-        padding-bottom: 3.25em;
+        /*padding-bottom: 3.25em; */
     }
     /* 404 page */
     .error404 .page-content {
