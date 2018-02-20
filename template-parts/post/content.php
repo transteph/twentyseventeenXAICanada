@@ -20,17 +20,7 @@
 	?>
 	<header class="entry-header">
 		<?php
-		if ( 'post' === get_post_type() ) {
-			echo '<div class="entry-meta">';
-				if ( is_single() ) {
-					twentyseventeen_posted_on();
-				} else {
-					echo twentyseventeen_time_link();
-					twentyseventeen_edit_link();
-				};
-			echo '</div><!-- .entry-meta -->';
-		};
-
+		
 		if ( is_single() ) {
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		} elseif ( is_front_page() && is_home() ) {
@@ -51,6 +41,17 @@
 
 	<div class="entry-content">
 		<?php
+		if ( 'post' === get_post_type() ) {
+			echo '<div class="entry-meta">';
+				if ( is_single() ) {
+					twentyseventeen_posted_on();
+				} else {
+					echo twentyseventeen_time_link();
+					twentyseventeen_edit_link();
+				};
+			echo '</div><!-- .entry-meta -->';
+		};
+
 		/* translators: %s: Name of current post */
 		the_content( sprintf(
 			__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'twentyseventeen' ),
