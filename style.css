@@ -2180,22 +2180,14 @@ body:not(.twentyseventeen-front-page) .entry-header {
 /* Single Post */
 
 body .blog .entry-title {
-    display:block !important;
     font-size: 32px;
-    font-size: 2.7rem;
-    position: absolute;
-    top: -50px;
+    font-size: 1.7rem;
     background-color: black;
     padding: 10px;
     display: inline-block;
     color: white;
-    max-width:70%;
+    width: 65vw;
 }
-
-body:not(.twentyseventeen-front-page):not(.home) .entry-title {
-    display:none;
-}
-
 .single-post:not(.has-sidebar) #primary,
 .page.page-one-column:not(.twentyseventeen-front-page) #primary,
 .archive.page-one-column:not(.has-sidebar) .page-header,
@@ -2210,6 +2202,7 @@ body:not(.twentyseventeen-front-page):not(.home) .entry-title {
 }
 body:not(.twentyseventeen-front-page) .single-featured-image-header {
     max-height:500px;
+    padding-top:50px;
 }
 .single-featured-image-header img {
     display: block;
@@ -3481,6 +3474,10 @@ object {
     #take-pledge{
         max-width:50%;
     }
+    body:not(.twentyseventeen-front-page) .single-featured-image-header{
+        padding-top:0;
+    }
+
 }
 
 @media screen and (min-width: 48em) {
@@ -3598,7 +3595,7 @@ object {
     #menu-logo{
       height: 57px;
       width: auto;
-      left: 50px;
+      left: 20px;
       position:absolute;
       display: block;
       z-index: 4444;
@@ -3615,7 +3612,7 @@ object {
         top:unset;
     }
     .navigation-top .wrap {
-        max-width: 90%;
+        max-width: 95%;
         /* The font size is 14px here and we need 50px padding in ems */
         padding: 0.75em 3.4166666666667em;
     }
@@ -3907,6 +3904,10 @@ object {
     .nav-next,
     .post-navigation .nav-next {
         margin-top: 0;
+    }
+    /* Blog post */
+    body:not(.twentyseventeen-front-page) .blog .entry-header, body:not(.twentyseventeen-front-page) .blog .entry-content, body:not(.twentyseventeen-front-page) .blog #comments{
+        transform: translateY(-20vh);
     }
     /* Blog, archive, search */
     .sticky .icon-thumb-tack {
